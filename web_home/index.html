@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#174e3c">
+  <meta name="description" content="趣伴云起，让每一次相聚更简单。用微信小程序轻松组织运动、户外和朋友聚会，报名候补、分组拼车、费用账单，一处安排。">
+  <meta property="og:title" content="趣伴云起 · 约上伙伴，一起出发">
+  <meta property="og:description" content="运动、户外、朋友相聚。把时间留给相聚，把活动安排交给趣伴云起。">
+  <meta property="og:type" content="website">
+  <title>趣伴云起 · 约上伙伴，一起出发</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/app-icon.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-qr" viewBox="0 0 24 24"><path d="M9 3H3v6h6V3Zm12 0h-6v6h6V3ZM9 15H3v6h6v-6Zm6 0h2v2h4m-6 4h2m4-2v2M3 12h2m7-9v2m0 4v6m0 6v-3m3-6h6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4m10-4v4M3 11h18m-13 5 3 3 5-5"/></symbol>
+    <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m1-16a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 4v3"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><path d="m5 6-2 7v6h18v-6l-2-7H5ZM3 13h18M6 19v2m12-2v2M7 16h1m8 0h1"/></symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M5 3h14v18l-3-2-4 2-4-2-3 2V3Zm4 5h6m-6 4h6m-6 4h3"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><rect x="3" y="10" width="18" height="11" rx="3"/><path d="M12 15V3m-5 5 5-5 5 5"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4 4l2 2m12 12 2 2M4 20l2-2M18 6l2-2"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 24 24"><path d="m2 20 8-15 5 8 3-5 5 12H2Zm5-9 3 2 2-2"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="趣伴云起首页"><img src="./assets/app-icon.svg" alt="" width="40" height="40"><span>趣伴云起<small>相聚，自有趣处</small></span></a>
+      <button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="展开导航"><span></span><span></span></button>
+      <nav id="main-nav" class="main-nav" aria-label="主导航">
+        <a href="#features">功能一览</a><a href="#how-it-works">如何开始</a><a href="#faq">常见问题</a>
+      </nav>
+      <a class="button button-small header-cta" href="#join" data-open-qr><svg class="icon"><use href="#i-qr"/></svg>打开小程序</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="status-dot"></span>结伴同行，有趣的小伙伴</span>
+        <h1 id="hero-title">好时光，<br>就该<span class="highlight">一起</span>出发。</h1>
+        <p class="hero-description">一场球，一段山路，一次久违的相聚。<br>从发起邀请到报名同行，让每一次「约吗」<br class="desktop-break">都有轻松的回应。</p>
+        <div class="hero-actions"><a class="button" href="#join" data-open-qr><svg class="icon"><use href="#i-qr"/></svg>微信扫码，马上出发<svg class="icon"><use href="#i-arrow"/></svg></a><a class="text-link" href="#features">了解趣伴<span aria-hidden="true">↘</span></a></div>
+        <p class="hero-note"><svg class="icon"><use href="#i-check"/></svg>微信里就能用<em>·</em>无需额外下载 App</p>
+        <div class="hero-divider"></div>
+        <div class="hero-bottom"><span class="mini-avatars" aria-hidden="true"><span>趣</span><span>伴</span><span>友</span></span><p>让组织者省心，让小伙伴尽兴。<small>运动 · 户外 · 朋友相聚</small></p></div>
+      </div>
+      <div class="hero-visual">
+        <div class="landscape-frame"><img class="landscape" src="./assets/landscape.jpg" alt="阳光越过青山，河流蜿蜒向前的小程序主题插画" width="1672" height="941" fetchpriority="high"><div class="landscape-shade"></div><div class="visual-caption"><span>GO OUT. GET TOGETHER.</span><p>山野有约，<br>趣伴同行。</p></div></div>
+        <div class="sun-sticker" aria-hidden="true"><svg class="icon"><use href="#i-sun"/></svg><span>去见面吧！</span></div>
+        <div class="floating-activity" aria-label="活动信息示意">
+          <div class="sample-label"><span class="status-dot"></span>下一站，一起去<span>示意活动</span></div>
+          <h2 id="scene-title">周末，去山里走走</h2>
+          <p><svg class="icon"><use href="#i-pin"/></svg><span id="scene-place">近郊山野 · 轻松徒步</span></p>
+          <div class="sample-footer"><span><b id="scene-count">8</b> / <span id="scene-capacity">12</span> 位伙伴已集结</span><span class="sample-badge">报名进行中 <span aria-hidden="true">↗</span></span></div>
+        </div>
+        <a class="hero-qr" href="#join" data-open-qr aria-label="放大小程序二维码"><img class="qr-square" src="./assets/miniprogram-code.jpg" alt="趣伴云起微信小程序码" width="112" height="112"><span>微信扫一扫<svg class="icon"><use href="#i-arrow"/></svg></span></a>
+      </div>
+    </section>
+
+    <section class="scene-section" aria-label="适合的活动场景">
+      <div class="container scene-inner"><p>不止一种爱好，<strong>都能找到同伴。</strong></p><div class="scene-options" role="group" aria-label="切换活动场景示意"><button class="scene-button is-active" type="button" data-scene="hiking" aria-pressed="true"><svg class="icon"><use href="#i-mountain"/></svg>户外徒步</button><button class="scene-button" type="button" data-scene="sports" aria-pressed="false"><svg class="icon"><use href="#i-people"/></svg>球场约战</button><button class="scene-button" type="button" data-scene="friends" aria-pressed="false"><svg class="icon"><use href="#i-sun"/></svg>朋友相聚</button></div></div>
+    </section>
+
+    <section class="features-section container section-space" id="features" aria-labelledby="features-title">
+      <div class="section-heading"><div><span class="kicker">少一点忙乱，多一点期待</span><h2 id="features-title">从「约吗」到「出发」，<br>每一步，都安排妥当。</h2></div><p>告别反复接龙、翻找消息。<br>一张活动卡片，把大家的安排放在一起。</p></div>
+      <div class="feature-showcase">
+        <div class="showcase-copy"><span class="feature-number">01 — 组织，一目了然</span><h3>人到哪了，<br>心里有数。</h3><p>谁报名、谁候补、怎么分队、如何同行，<br>打开活动就能看清。把精力留给活动本身。</p><div class="showcase-tabs" role="tablist" aria-label="功能演示"><button type="button" role="tab" id="tab-signup" aria-selected="true" aria-controls="panel-signup" tabindex="0" data-panel="signup"><svg class="icon"><use href="#i-people"/></svg>报名候补<svg class="icon tab-arrow"><use href="#i-arrow"/></svg></button><button type="button" role="tab" id="tab-carpool" aria-selected="false" aria-controls="panel-carpool" tabindex="-1" data-panel="carpool"><svg class="icon"><use href="#i-car"/></svg>分组拼车<svg class="icon tab-arrow"><use href="#i-arrow"/></svg></button><button type="button" role="tab" id="tab-expense" aria-selected="false" aria-controls="panel-expense" tabindex="-1" data-panel="expense"><svg class="icon"><use href="#i-receipt"/></svg>费用账单<svg class="icon tab-arrow"><use href="#i-arrow"/></svg></button></div></div>
+        <div class="showcase-preview">
+          <span class="preview-label">功能界面示意 · 非真实活动数据</span>
+          <div class="demo-panel" role="tabpanel" id="panel-signup" aria-labelledby="tab-signup" tabindex="0">
+            <div class="demo-heading"><span class="demo-icon"><svg class="icon"><use href="#i-calendar"/></svg></span><div><h4>周六快乐足球局</h4><p>周六 16:00 · 城市足球场</p></div><span class="live-tag">报名中</span></div>
+            <div class="signup-meter"><div><span>正式报名</span><strong>12 <small>/ 14 人</small></strong></div><div class="meter"><span></span></div><p>还有 2 个名额，叫上你的老搭档</p></div>
+            <div class="roster-row"><span class="person-avatar peach">小林</span><div><strong>小林</strong><span>已报名 · 红队</span></div><span class="person-team red">红队</span></div>
+            <div class="roster-row"><span class="person-avatar sage">阿远</span><div><strong>阿远 +1</strong><span>代报名 · 共 2 人</span></div><span class="person-team blue">蓝队</span></div>
+            <div class="demo-tip"><svg class="icon"><use href="#i-check"/></svg>满员后进入候补，名额空出时按序递补</div>
+          </div>
+          <div class="demo-panel" role="tabpanel" id="panel-carpool" aria-labelledby="tab-carpool" tabindex="0" hidden>
+            <div class="demo-heading"><span class="demo-icon"><svg class="icon"><use href="#i-car"/></svg></span><div><h4>同路，就一起走</h4><p>活动报名后，安排拼车同行</p></div><span class="live-tag">拼车</span></div>
+            <div class="team-demo"><span class="person-team red">红队 · 6 人</span><span class="person-team blue">蓝队 · 6 人</span><span>分队清晰，集合更快</span></div>
+            <div class="car-card"><div class="car-title"><strong>阿远的车</strong><span class="live-tag">余 2 座</span></div><p><svg class="icon"><use href="#i-pin"/></svg>地铁站 A 出口</p><p><svg class="icon"><use href="#i-calendar"/></svg>活动当天 15:00 出发</p><div class="car-seats" aria-label="1 个座位已占，2 个空座"><span>已搭乘</span><span>空座</span><span>空座</span></div></div>
+            <div class="demo-tip"><svg class="icon"><use href="#i-check"/></svg>车位、上车地点、出发时间，一处看清</div>
+          </div>
+          <div class="demo-panel" role="tabpanel" id="panel-expense" aria-labelledby="tab-expense" tabindex="0" hidden>
+            <div class="demo-heading"><span class="demo-icon"><svg class="icon"><use href="#i-receipt"/></svg></span><div><h4>一起玩，也算得清</h4><p>活动费用 · 人均 AA 示意</p></div><span class="live-tag">账单</span></div>
+            <div class="expense-total"><span>活动费用合计</span><strong><small>¥</small> 420.00</strong><p>14 人分摊 · 人均 ¥30.00</p></div>
+            <div class="expense-line"><span>场地费用</span><strong>¥360.00</strong></div><div class="expense-line"><span>饮用水</span><strong>¥60.00</strong></div>
+            <div class="demo-tip"><svg class="icon"><use href="#i-check"/></svg>上传费用凭证，分享账单，群内收款后人工核账</div>
+          </div>
+        </div>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="feature-icon"><svg class="icon"><use href="#i-share"/></svg></span><h3>邀请，一张卡片就够</h3><p>分享到微信群，或生成专属活动海报。伙伴点开卡片、扫描活动码，就能查看和报名。</p><span class="feature-tag">卡片分享 / 活动海报</span></article>
+        <article class="feature-card"><span class="feature-icon"><svg class="icon"><use href="#i-pin"/></svg></span><h3>集合地点，不再靠猜</h3><p>用地图选好活动和集合地点，支持多个地址。活动详情中点开地点，就能查看地图。</p><span class="feature-tag">地图选址 / 多个地点</span></article>
+        <article class="feature-card"><span class="feature-icon"><svg class="icon"><use href="#i-calendar"/></svg></span><h3>精彩时刻，都有记录</h3><p>足球、篮球活动可记录比分、得分和助攻。回看历史赛果，也看看自己和伙伴的表现。</p><span class="feature-tag">比分记录 / 历史统计</span></article>
+      </div>
+    </section>
+
+    <section class="how-section" id="how-it-works" aria-labelledby="how-title"><div class="container section-space">
+      <div class="section-heading"><div><span class="kicker">简单三步，好局就绪</span><h2 id="how-title">下一次相聚，<br>就从这一次开始。</h2></div><a class="text-link" href="#join" data-open-qr>去发起你的活动<svg class="icon"><use href="#i-arrow"/></svg></a></div>
+      <ol class="steps"><li><div class="step-top"><span>01</span><svg class="icon"><use href="#i-calendar"/></svg></div><h3>发起一场活动</h3><p>填好时间、地点与人数，按需开启分组、拼车或费用。常用信息可从创建历史带入。</p></li><li><div class="step-top"><span>02</span><svg class="icon"><use href="#i-share"/></svg></div><h3>邀请你的伙伴</h3><p>把活动卡片发到微信群。大家自行报名，满员后进入候补，名单变化清晰可见。</p></li><li><div class="step-top"><span>03</span><svg class="icon"><use href="#i-sun"/></svg></div><h3>准时见面，尽兴而归</h3><p>确认名单、分队与同行安排。活动后整理费用和记录，让下一次相聚更轻松。</p></li></ol>
+      <div class="quote-line"><span aria-hidden="true">“</span><p>行到水穷处，坐看云起时。</p><small>王维《终南别业》</small><svg class="icon"><use href="#i-mountain"/></svg></div>
+    </div></section>
+
+    <section class="faq-section container section-space" id="faq" aria-labelledby="faq-title"><div class="faq-intro"><span class="kicker">出发之前，你可能想问</span><h2 id="faq-title">让相聚，<br>少一点疑问。</h2><p>更多具体操作，可在小程序首页<br>「使用说明」中查看。</p></div><div class="faq-list">
+      <details open><summary>趣伴云起只适合足球活动吗？<span aria-hidden="true">+</span></summary><p>不止足球。你可以用它组织球类运动、户外徒步或朋友聚会，设置活动类型、时间、地点和人数。比分与个人数据记录目前适用于足球、篮球活动。</p></details>
+      <details><summary>需要下载 App，或者注册新账号吗？<span aria-hidden="true">+</span></summary><p>无需额外下载 App，在微信中打开小程序即可使用。报名时可以主动选择头像并填写伙伴熟悉的称呼，头像为可选项，成功报名后可保存资料供下次使用。</p></details>
+      <details><summary>活动满员了，还可以报名吗？<span aria-hidden="true">+</span></summary><p>活动开放报名时，满员后可进入候补。正式名额空出后，按候补顺序递补。候补转正服务通知需要主动订阅，并以实际授权和通知配置为准。</p></details>
+      <details><summary>活动费用怎么收？支持在线支付吗？<span aria-hidden="true">+</span></summary><p>当前采用群内或线下收款、发起人人工核账。小程序可整理费用凭证、计算人均 AA、登记付款说明和核实到账；目前未接入微信支付，不代收或保管资金。</p></details>
+      <details><summary>在手机浏览器上怎么打开小程序？<span aria-hidden="true">+</span></summary><p>点击「打开小程序」查看二维码。在微信内可尝试长按识别；其他浏览器可保存二维码图片，再打开微信「扫一扫」，从相册选择图片。也可以在微信搜一搜中搜索「趣伴云起」。</p></details>
+    </div></section>
+
+    <section class="join-section container" id="join" aria-labelledby="join-title"><div class="join-copy"><span class="join-kicker"><span class="status-dot"></span>下一场好时光，等你来发起</span><h2 id="join-title">约上伙伴，<br>一起<span>云起</span>。</h2><p>打开微信扫一扫，从一次简单的邀约开始。</p><a class="button button-light" href="./assets/miniprogram-code.jpg" download="趣伴云起-小程序二维码.jpg"><svg class="icon"><use href="#i-download"/></svg>保存小程序二维码</a><span class="join-search">微信搜一搜 <strong>「趣伴云起」</strong> 也能找到我们</span></div><div class="join-qr-card"><button type="button" class="qr-enlarge" data-open-qr aria-label="放大趣伴云起小程序码"><img class="qr-square" src="./assets/miniprogram-code.jpg" alt="使用微信扫描此码打开趣伴云起小程序" width="224" height="224" loading="lazy"></button><strong>趣伴云起</strong><span>微信扫一扫 · 轻松开启相聚</span></div><div class="join-decoration" aria-hidden="true"></div></section>
+  </main>
+
+  <footer class="site-footer container"><a class="brand footer-brand" href="#"><img src="./assets/app-icon.svg" alt="" width="32" height="32"><span>趣伴云起</span></a><p>结伴同行，有趣的小伙伴。</p><a href="#main">回到顶部 ↑</a><small>趣伴云起 · 微信活动报名小程序</small></footer>
+
+  <dialog class="qr-dialog" aria-labelledby="qr-dialog-title" aria-describedby="qr-dialog-description"><button class="dialog-close" type="button" aria-label="关闭二维码弹窗" autofocus><svg class="icon"><use href="#i-close"/></svg></button><span class="kicker">美好的相聚，从这里开始</span><h2 id="qr-dialog-title">微信扫一扫，打开趣伴云起</h2><p id="qr-dialog-description">电脑端请用微信扫码；手机端可长按识别，<br>或保存图片后在微信扫一扫中从相册选择。</p><img class="qr-original" src="./assets/miniprogram-code.jpg" alt="趣伴云起原始小程序二维码及微信搜一搜名称" width="1182" height="399"><a class="button" href="./assets/miniprogram-code.jpg" download="趣伴云起-小程序二维码.jpg"><svg class="icon"><use href="#i-download"/></svg>保存二维码图片</a><p class="dialog-note">也可以在微信搜一搜中搜索 <strong>趣伴云起</strong></p></dialog>
+</body>
+</html>

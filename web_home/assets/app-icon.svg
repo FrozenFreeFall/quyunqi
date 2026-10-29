@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <title>趣伴云起 · 山野日出</title>
+  <defs>
+    <clipPath id="frame"><rect width="80" height="80" rx="19"/></clipPath>
+    <linearGradient id="sky" x1="40" y1="0" x2="40" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#174E3C"/><stop offset="1" stop-color="#276F56"/></linearGradient>
+  </defs>
+  <g clip-path="url(#frame)">
+    <path fill="url(#sky)" d="M0 0h80v80H0z"/>
+    <circle cx="51" cy="25" r="10" fill="#F4E5A2"/>
+    <path d="m-4 64 29-37 19 24 13-15 28 31v17H-4V64Z" fill="#80B59A"/>
+    <path d="m12 43 13-16 12 15-12-5-13 6Z" fill="#E5EFCE"/>
+    <path d="M-5 65c17-18 30-14 44-7 17 8 29-12 46-7v34H-5V65Z" fill="#3B896D"/>
+    <path d="M-4 78c18-14 36-13 52-8 14 4 24 0 37-5v20H-4v-7Z" fill="#205B47"/>
+    <path d="M43 52c-20 9 18 8 3 18-4 3-12 5-19 10h19c4-5 10-8 11-12 2-9-26-8-14-16Z" fill="#E6EFCB"/>
+    <path d="M11 24h10m-5-5h12" stroke="#D8E9CD" stroke-width="2.2" stroke-linecap="round" opacity=".6"/>
+  </g>
+</svg>
